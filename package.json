@@ -1,0 +1,25 @@
+{
+  "name": "prs-webservice",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "SET NODE_ENV=development && node ./bin/www",
+    "prod": "echo run ON PROD mode",
+    "build": "npm run clean && npm run build-ts",
+    "clean": "rimraf ./build",
+    "build-ts": "tsc"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "mongoose": "^8.0.0",
+    "morgan": "~1.9.1",
+    "rimraf": "^5.0.5",
+    "tsc": "^2.0.4",
+    "typescript": "^5.2.2"
+  }
+}
