@@ -30,7 +30,7 @@ router.get('/getPassService/:apikey/:platform/:customer/:stage/:step/:program/:v
     }
 
 else{
-    const A = await passSchema.find({status: 'pass',platform:req.params.platform,customer:req.params.customer,stage:req.params.stage,program:req.params.program,version:req.params.version,plant:req.params.plant}); // 括號內可設定尋找條件
+    const A = await passSchema.find({status: 'pass',platform:req.params.platform,customer:req.params.customer,stage:req.params.stage,step:req.params.step,program:req.params.program,version:req.params.version,plant:req.params.plant}); // 括號內可設定尋找條件
     console.log(A);
     console.log(req.params.platform)
     console.log(req.params.customer)
